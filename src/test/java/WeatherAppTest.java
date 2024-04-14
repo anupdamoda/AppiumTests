@@ -34,14 +34,16 @@ public class WeatherAppTest {
 //        cap.setCapability("appPackage","com.reddit.frontpage");
 //        cap.setCapability("appActivity","com.reddit.launch.main.MainActivity");
 
-        cap.setCapability("appPackage","com.coloros.weather2");
-        cap.setCapability("appActivity","com.oplus.weather.main.view.WeatherMainActivity");
+//        cap.setCapability("appPackage","com.coloros.weather2");
+//        cap.setCapability("appActivity","com.oplus.weather.main.view.WeatherMainActivity");
 
         URL url = new URL("http://127.0.0.1:4723/");
         driver = new AppiumDriver(url,cap);
       //  driver.findElement(new AppiumBy.ByAccessibilityId("Manage cities")).click();
       //  driver.findElement(new AppiumBy.ByAccessibilityId("Add")).click();
       //  driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiSelector().text(\"Sydney\").instance(0)")).click();
+
+    //    driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\")")).click();
 
 System.out.println("Application started");
 
